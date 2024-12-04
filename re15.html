@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title> </title>
+  </head>
+  <body>
+    <script>
+      const st = "abc";
+	const st1 = "axc";
+	const st2 = "avc";
+	const re = /[a|e|i|o|u]vc/;
+	document.write(re.test(st));//true
+	document.write('<br>');
+	document.write(re.test(st1));//true
+	document.write('<br>');
+	document.write(re.test(st2));//false
+    </script>
+    
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title> </title>
+  </head>
+  <body>
+    <script>
+	//valid phone number
+        const st = "a";
+	const st1 = "ab";
+	const st2 = "abb";
+	const re = /ab+/;
+	document.write(re.test(st));//false
+	document.write('<br>');
+	document.write(re.test(st1));//true
+	document.write('<br>');
+	document.write(re.test(st2));//true
+    </script>
+    
+  </body>
+</html>
