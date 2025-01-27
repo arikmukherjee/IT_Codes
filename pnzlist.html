@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function f() {
+        var pCount=0,nCount=0,zCount=0;
+        var a = document.getElementById("d1").value;
+        a = a.split(',');
+        for(i=0;i<a.length;i++){
+            if(a[i]>0){
+                pCount++;
+            }
+            else if(a[i]<0){
+                nCount++;
+            }
+            else{
+                zCount++;
+            }
+        }
+        document.write("+ve : " + pCount + '<br>');
+        document.write("-ve : " + nCount + '<br>');
+        document.write("zero : " + zCount + '<br>');
+      }
+    </script>
+    numbers: <input type="text" id="d1" />
+    <input type="button" value="click" onclick="f()" />
+  </body>
+</html>

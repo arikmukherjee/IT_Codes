@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function gcd(){
+            var a = parseInt(document.getElementById("d1").value);
+            var b = parseInt(document.getElementById("d2").value);
+            for (i=1;i<=a;i++){
+                if(a%i==0 && b%i==0)
+                    g=i;
+            }
+            document.getElementById("d3").value = g;
+        }
+    </script>
+    a = <input type="text" id="d1">
+    b = <input type="text" id="d2">
+    GCD = <input type="text" id="d3">
+    <button onclick="gcd()">Calculate</button>
+</body>
+</html>

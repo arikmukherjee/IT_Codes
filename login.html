@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function f() {
+            var username = document.getElementById("d1").value;
+            var password = document.getElementById("d2").value;
+            var email = document.getElementById("d3").value;
+            usernameRE = /^[a-zA-Z]+$/;
+            passwordRE = /^[a-zA-Z0-9@.-_$%#&]{8}$/;
+            emailRE = /^[a-z0-9]+@[a-z]{5}\.[a-z]{3}$/;
+            if(usernameRE.test(username)==true && passwordRE.test(password)==true && emailRE.test(email)==true){
+                    alert("login successful!");
+            }
+            else{
+                alert("Invalid username or password!");
+            }
+        }
+    </script>
+    <form action="" method="post">
+        username: <input type="text" id="d1">
+        password: <input type="password" id="d2">
+        email: <input type="text" id="d3">
+        <input type="button" value="submit" onclick="f()">
+    </form>
+</body>
+</html>

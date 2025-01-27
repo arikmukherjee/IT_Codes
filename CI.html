@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculateCI(){
+            var p = parseInt(document.getElementById("d1").value);
+            var r = parseInt(document.getElementById("d2").value);
+            var t = parseInt(document.getElementById("d3").value);
+            var CI = (p * Math.pow(1+(r/100),t)) - p;
+            document.getElementById("d5").value = CI;
+        }
+    </script>
+    Enter Principal Amount(p) : <input type="text" id="d1"><br>
+    Enter Rate of Interest(r) : <input type="text" id="d2"><br>
+    Enter Time in Years(t) : <input type="text" id="d3"><br>
+    CI = <input type="text" id="d5">
+    <button onclick="calculateCI()">Calculate CI</button>
+</body>
+</html>

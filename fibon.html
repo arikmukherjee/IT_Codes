@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function f(){
+            var t1 = 0;
+            var t2 = 1;
+            var terms = parseInt(document.getElementById("d1").value);
+            document.write(t1 + '<br>');
+            document.write(t2);
+            document.write('<br>');
+            for (i=0;i<terms;i++){
+                var nextTerm = t1 + t2;
+                document.write(nextTerm + '<br>');
+                t1 = t2;
+                t2 = nextTerm;
+            }
+        }
+    </script>
+    Number: <input type="text" id="d1">
+    <input type="button" value="click" onclick="f()">
+</body>
+</html>

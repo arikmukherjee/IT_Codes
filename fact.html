@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function f(){
+            var num = parseInt(document.getElementById("d1").value);
+            var fact = 1;
+            for(i=1;i<=num;i++){
+                fact=fact*i;
+            }
+            document.getElementById("d2").value = fact;
+        }
+    </script>
+    Enter number : <input type="text" id="d1">
+    factorial: <input type="text" id="d2">
+    <input type="button" value="click" onclick="f()">
+</body>
+</html>
